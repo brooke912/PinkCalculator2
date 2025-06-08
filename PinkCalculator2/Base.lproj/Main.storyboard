@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PinkCalculator2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="0Bz-Vm-jcV">
+                                <rect key="frame" x="16" y="126" width="362.66666666666669" height="810"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ES-LF-fiB">
+                                        <rect key="frame" x="0.0" y="0.0" width="362.66666666666669" height="135"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="0">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.55686277149999996" green="0.55294120309999995" blue="0.56862747670000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" metaFont="system" size="38"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="AKH-wv-YOm">
+                                        <rect key="frame" x="0.0" y="135" width="362.66666666666669" height="135"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="AeY-Bj-bGU">
+                                                <rect key="frame" x="0.0" y="0.0" width="84.666666666666671" height="135"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.93326037279999996" green="0.16884332290000001" blue="0.77924101140000002" alpha="0.082522764900000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="tintColor" red="0.97985917329788208" green="0.18117681691436718" blue="0.8147269389741213" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="AC">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="WH4-hd-tPt">
+                                                <rect key="frame" x="92.666666666666686" y="0.0" width="84.333333333333314" height="135"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.93326037279999996" green="0.16884332290000001" blue="0.77924101140000002" alpha="0.082522764900000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="tintColor" red="0.97985917330000005" green="0.18117681690000001" blue="0.81472693900000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="+/-">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="0rk-zm-j5e">
+                                                <rect key="frame" x="185" y="0.0" width="84.666666666666686" height="135"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.93326037279999996" green="0.16884332290000001" blue="0.77924101140000002" alpha="0.082522764900000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="tintColor" red="0.97985917330000005" green="0.18117681690000001" blue="0.81472693900000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="%">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="zLl-iC-96a">
+                                                <rect key="frame" x="277.66666666666669" y="0.0" width="84.333333333333314" height="135"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.93326037279999996" green="0.16884332290000001" blue="0.77924101140000002" alpha="0.082522764900000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="tintColor" red="0.97985917330000005" green="0.18117681690000001" blue="0.81472693900000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="÷">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cU0-8Y-vUZ">
+                                        <rect key="frame" x="0.0" y="270" width="362.66666666666669" height="135"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Flz-m4-Jnr">
+                                                <rect key="frame" x="0.0" y="0.0" width="84.666666666666671" height="135"/>
+                                                <color key="backgroundColor" red="0.93326037279999996" green="0.16884332290000001" blue="0.77924101140000002" alpha="0.082522764900000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="tintColor" red="0.97985917330000005" green="0.18117681690000001" blue="0.81472693900000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="7">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Jcx-6S-ydY">
+                                                <rect key="frame" x="92.666666666666686" y="0.0" width="84.333333333333314" height="135"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.93326037279999996" green="0.16884332290000001" blue="0.77924101140000002" alpha="0.082522764900000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="tintColor" red="0.97985917330000005" green="0.18117681690000001" blue="0.81472693900000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="8">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="gJL-0x-q1z">
+                                                <rect key="frame" x="185" y="0.0" width="84.666666666666686" height="135"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.93326037279999996" green="0.16884332290000001" blue="0.77924101140000002" alpha="0.082522764900000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="tintColor" red="0.97985917330000005" green="0.18117681690000001" blue="0.81472693900000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="9">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="8pS-ZO-KXe">
+                                                <rect key="frame" x="277.66666666666669" y="0.0" width="84.333333333333314" height="135"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.93326037279999996" green="0.16884332290000001" blue="0.77924101140000002" alpha="0.082522764900000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="tintColor" red="0.97985917330000005" green="0.18117681690000001" blue="0.81472693900000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="X">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="aAK-rm-3Hj">
+                                        <rect key="frame" x="0.0" y="405" width="362.66666666666669" height="135"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27w-AX-7bv">
+                                                <rect key="frame" x="0.0" y="0.0" width="84.666666666666671" height="135"/>
+                                                <color key="backgroundColor" red="0.93326037279999996" green="0.16884332290000001" blue="0.77924101140000002" alpha="0.082522764900000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="tintColor" red="0.97985917330000005" green="0.18117681690000001" blue="0.81472693900000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="4">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
+                                                </buttonConfiguration>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <color key="tintColor" red="0.97985917330000005" green="0.18117681690000001" blue="0.81472693900000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </variation>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="WDt-ee-f6h">
+                                                <rect key="frame" x="92.666666666666686" y="0.0" width="84.333333333333314" height="135"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.93326037279999996" green="0.16884332290000001" blue="0.77924101140000002" alpha="0.082522764900000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="tintColor" red="0.97985917330000005" green="0.18117681690000001" blue="0.81472693900000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="5">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="iMw-jd-7Ph">
+                                                <rect key="frame" x="185" y="0.0" width="84.666666666666686" height="135"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.93326037279999996" green="0.16884332290000001" blue="0.77924101140000002" alpha="0.082522764900000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="tintColor" red="0.97985917330000005" green="0.18117681690000001" blue="0.81472693900000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="6">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="suI-Eb-Uag">
+                                                <rect key="frame" x="277.66666666666669" y="0.0" width="84.333333333333314" height="135"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.93326037279999996" green="0.16884332290000001" blue="0.77924101140000002" alpha="0.082522764900000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="tintColor" red="0.97985917330000005" green="0.18117681690000001" blue="0.81472693900000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="–">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="nJQ-gW-5Jy">
+                                        <rect key="frame" x="0.0" y="540" width="362.66666666666669" height="135"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ck4-p8-VzA">
+                                                <rect key="frame" x="0.0" y="0.0" width="84.666666666666671" height="135"/>
+                                                <color key="backgroundColor" red="0.93326037279999996" green="0.16884332290000001" blue="0.77924101140000002" alpha="0.082522764900000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="tintColor" red="0.97985917330000005" green="0.18117681690000001" blue="0.81472693900000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="1">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="nzb-IZ-9Vr">
+                                                <rect key="frame" x="92.666666666666686" y="0.0" width="84.333333333333314" height="135"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.93326037279999996" green="0.16884332290000001" blue="0.77924101140000002" alpha="0.082522764900000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="tintColor" red="0.97985917330000005" green="0.18117681690000001" blue="0.81472693900000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="2">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="34X-MK-hB3">
+                                                <rect key="frame" x="185" y="0.0" width="84.666666666666686" height="135"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.93326037279999996" green="0.16884332290000001" blue="0.77924101140000002" alpha="0.082522764900000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="tintColor" red="0.97985917330000005" green="0.18117681690000001" blue="0.81472693900000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="3">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="NJY-ob-hsx">
+                                                <rect key="frame" x="277.66666666666669" y="0.0" width="84.333333333333314" height="135"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.93326037279999996" green="0.16884332290000001" blue="0.77924101140000002" alpha="0.082522764900000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="tintColor" red="0.97985917330000005" green="0.18117681690000001" blue="0.81472693900000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="+">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="FK5-hU-RFd">
+                                        <rect key="frame" x="0.0" y="675" width="362.66666666666669" height="135"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1I3-60-Gpu">
+                                                <rect key="frame" x="0.0" y="0.0" width="114.66666666666667" height="135"/>
+                                                <color key="backgroundColor" red="0.93326037279999996" green="0.16884332290000001" blue="0.77924101140000002" alpha="0.082522764900000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="tintColor" red="0.97985917330000005" green="0.18117681690000001" blue="0.81472693900000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="0">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="QYC-O5-wWd">
+                                                <rect key="frame" x="122.66666666666669" y="0.0" width="87" height="135"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.93326037279999996" green="0.16884332290000001" blue="0.77924101140000002" alpha="0.082522764900000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="tintColor" red="0.97985917330000005" green="0.18117681690000001" blue="0.81472693900000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title=".">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="bBd-T5-Jym">
+                                                <rect key="frame" x="217.66666666666663" y="0.0" width="144.33333333333337" height="135"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.93326037279494956" green="0.16884332292116835" blue="0.77924101138884005" alpha="0.082522764900662252" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="tintColor" red="0.97985917330000005" green="0.18117681690000001" blue="0.81472693900000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="=">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="PinkBackground"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="PinkBackground"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Bz-Vm-jcV" secondAttribute="trailing" constant="16" id="Hfh-Ms-xcn"/>
+                            <constraint firstItem="0Bz-Vm-jcV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="ITq-dD-n74"/>
+                            <constraint firstItem="0Bz-Vm-jcV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="S9r-yd-MGT"/>
+                            <constraint firstAttribute="bottom" secondItem="0Bz-Vm-jcV" secondAttribute="bottom" constant="20" id="s14-Hx-fCX"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="57.251908396946561" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="PinkBackground">
+            <color red="1" green="0.8784313725490196" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
